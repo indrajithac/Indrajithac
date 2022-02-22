@@ -1,0 +1,73 @@
+/*
+Colours
+
+background :rgba(223, 224, 228,1);
+Text rgba(27,33,64)
+*/
+
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+    background: rgba(223, 224, 228,1);
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.header{
+    background:rgba(27,33,64);           
+   
+}
+
+.navbar-brand{
+    height: auto;
+    width: auto;
+}
+
+.navbarButtons{
+    color: white;
+}
+
+.landing{
+    background: rgb(71, 77, 116);
+    position: relative;  
+    
+    
+}
+
+.landing .about{
+    color: aliceblue;
+}
+
+.curve svg {
+display: block;
+}
+
+/* .custom-shape-divider-bottom-1645105533 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1645105533 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 75px;
+}
+
+.custom-shape-divider-bottom-1645105533 .shape-fill {
+    fill: #C3C9EB
+} */
+
+
+
+
+
+
