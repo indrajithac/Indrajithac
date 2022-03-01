@@ -16,55 +16,57 @@ body{
 
 }
 
+
+
 .header{
     background:rgba(27,33,64);           
    
 }
 
 .navbar-brand{
-    height: auto;
-    width: auto;
+    width: 180px;
 }
 
 .navbarButtons{
     color: white;
 }
 
-.landing{
-    background: rgb(71, 77, 116);
-    position: relative;  
-    
+.landing{    
+    background-image: url('./images/landing-background.svg');
+    background-size: cover; 
+    background-position: top;
+    padding-top: 20px;   
+    margin-bottom: 20px;
+
     
 }
 
 .landing .about{
-    color: aliceblue;
+    align-items: center;
+}
+.landing .about .about-description{
+    color: rgba(27,33,64);
+    padding-left: 2.5rem;
+}
+
+.landing .about .about-img{
+    display: flex;
+    justify-content: center;
+}
+.landing .about-img img{
+    width: 90%;
+    border-radius: 20px;
 }
 
 .curve svg {
 display: block;
 }
 
-/* .custom-shape-divider-bottom-1645105533 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+@media (max-width: 767px) {
+    .landing .about .about-description{
+        text-align: center;
+    }
 }
-
-.custom-shape-divider-bottom-1645105533 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 75px;
-}
-
-.custom-shape-divider-bottom-1645105533 .shape-fill {
-    fill: #C3C9EB
-} */
 
 
 
