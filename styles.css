@@ -30,7 +30,6 @@ body{
 .navbarButtons{
     color: white;
 }
-
 .landing{    
     background-image: url('./images/landing-background.svg');
     background-size: cover; 
@@ -40,7 +39,6 @@ body{
 
     
 }
-
 .landing .about{
     align-items: center;
 }
@@ -48,20 +46,19 @@ body{
     color: rgba(27,33,64);
     padding-left: 2.5rem;
 }
-
 .landing .about .about-img{
     display: flex;
     justify-content: center;
 }
 .landing .about-img img{
-    width: 90%;
+    width: 80%;
     border-radius: 20px;
 }
 
+
 .what-i-do{
     background: rgb(137, 149, 217);
-    color: rgba(27,33,64);    
-
+    color: rgba(27,33,64);  
 }
 .curve svg {
     display: block;
@@ -76,29 +73,59 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: -7.5rem;
+    margin-top: -8rem;
     z-index: 2;
     position: relative;
     
 }
 .what-i-do .logos .logo{
-    padding-top: 20px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+.what-i-do .logos .logo p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .what-i-do .logos img{
-    height: 100px;
+    height: 90px;
 
 }
-
-.what-i-do .heading{
-    display: flex;
-    flex-direction: column;
+.heading{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.what-i-do .grid{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
     justify-content: center;
-    align-items: center;
 }
+.what-i-do .grid .card{
+    background: none;
+    border: none;
+    text-align: center;
+    align-items: center;
+
+}
+.what-i-do .grid .card .image{
+height: 150px;
+}
+.what-i-do .grid .card img{
+    padding: 5px 10px 10px 10px;
+    width: 90%;
+}
+.what-i-do .grid .card .text{
+    padding: 10px;    
+}
+
+
+
+
+
 
 
 
@@ -106,17 +133,28 @@ body{
     .what-i-do .logos{
         margin-top: -5rem;
     }
-
+    .what-i-do .logos img{
+        height: 80px;
+    }
+    .what-i-do .grid{
+        grid-template-columns: repeat(2,1fr);
+    }  
 }
+
 @media (max-width: 767px) {
     .landing .about .about-description{
         text-align: center;
     }
     .what-i-do .logos{
-        margin-top: -5rem;
+        margin-top: -3rem;
+        font-size: 0.75rem;
     }
-
-
+    .what-i-do .logos img{
+        height: 60px;
+    }
+    .what-i-do .grid{
+        grid-template-columns: repeat(1,1fr);
+    }       
 }
 
 
