@@ -227,13 +227,22 @@ height: 150px;
     border: 1px solid #ccc ;
     padding-left: 15px;
     transition: all 0.5s ease;
-
 }
 .contact .contact-details .input-box input:valid,
 .contact .add-input-box textarea:focus{
     border-color:rgba(27,33,64) ;
-    
 }
+.contact .add-input-box .text-area{
+    height: 80px;
+    resize: none;
+ }
+ .contact .add-input-box .text-area::-webkit-scrollbar {
+      width: 0 !important 
+}
+
+
+
+
 .contact .add-input-box{
     padding: 0 25px 20px 25px;
 
