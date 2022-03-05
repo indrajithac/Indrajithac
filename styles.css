@@ -272,11 +272,9 @@ height: 150px;
     background:rgba(27,33,64) ;
     border-radius: 20px;
     padding: 5px 50px 20px 50px;
-    margin-top: -8rem;
+    margin-top: -7.3rem;
     z-index: 2;
-    position: relative;
-
-    
+    position: relative;    
 }
 .footer-logos .heading{
     color: white;
@@ -345,7 +343,12 @@ height: 150px;
     }
     .what-i-do .grid{
         grid-template-columns: repeat(2,1fr);
-    }  
+    }
+    .footer-logos{
+        
+        margin-top: -5rem;
+          
+    }
 }
 
 @media (max-width: 767px) {
@@ -367,6 +370,9 @@ height: 150px;
     }
     .contact .contact-details .input-box{
         width: 100%
+    }
+    .footer-logos{        
+        margin-top: -3rem;          
     }
 }
 
