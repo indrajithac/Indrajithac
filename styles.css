@@ -29,22 +29,29 @@ a{
     background:rgba(27,33,64);           
    
 }
-
 .navbar-brand{
     width: 180px;
 }
-
 .navbarButtons{
     color: white;
+}
+.navbar .linkedin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+.navbar .linkedin img{
+ height: 25px;
+ width: 25px;
+ opacity: 0.8;
 }
 .custom-toggler.navbar-toggler {
     border-color: transparent
 }
-
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(137, 149, 217)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  }
-  
+}  
 
  
 .landing{    
@@ -82,7 +89,7 @@ a{
     display: block;
     z-index: 1;
     position: relative;
-    }
+}
 
 .what-i-do .logos{
     background:rgba(27,33,64);           
@@ -151,12 +158,10 @@ height: 150px;
     grid-gap: 30px;
     justify-content: center;
 }
-
 .portfolio .grid .card{
     transition: all .2s ease;
 
 }
-
 .portfolio .grid .card img{
         width: 90%;
         border-radius: 20px;
@@ -182,9 +187,7 @@ height: 150px;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
-
+    align-items: center;   
 }
 .portfolio .button a{    
     width: 100px;
@@ -212,14 +215,12 @@ height: 150px;
     margin-top: 0;
     padding-top: 20px;
 }
-
 .contact .contact-details{
     display:flex;
     flex-wrap: wrap;   
     justify-content: space-between;
     color: rgba(27,33,64);
     padding: 20px 25px;
-
 }
 .contact .contact-details .input-box{
     width: calc(100% / 2 - 20px);
@@ -230,7 +231,6 @@ height: 150px;
     margin-bottom: 10px;
     margin-top: 20px;
 }
-
 .contact .contact-details .input-box input,
 .contact .add-input-box textarea{
     width: 100%;
@@ -248,14 +248,10 @@ height: 150px;
 .contact .add-input-box .text-area{
     height: 80px;
     resize: none;
- }
- .contact .add-input-box .text-area::-webkit-scrollbar {
+}
+.contact .add-input-box .text-area::-webkit-scrollbar {
       width: 0 !important 
 }
-
-
-
-
 .contact .add-input-box{
     padding: 0 25px 20px 25px;
 
@@ -274,13 +270,14 @@ height: 150px;
     background:rgba(27,33,64);
     color: white;
     transition: all .2s ease;
-
 }
 .contact .button input:hover{
     transform: scale(1.02);
     background:rgb(52, 64, 122);
     color: rgb(196, 196, 196);
 }
+
+
 .footer-logos{
     background:rgba(27,33,64) ;
     border-radius: 20px;
@@ -293,7 +290,6 @@ height: 150px;
     color: white;
     margin: 10px 0 20px 0;
 }
-
 .footer-logo{
     border-radius: 20px;
     display: flex;
@@ -308,7 +304,6 @@ height: 150px;
 .footer-logo a:hover{
     transform: scale(1.05);
 }
-
 .footer-logo img{
     width: 70%;
     height: auto;
@@ -329,7 +324,6 @@ height: 150px;
     width: 25%;
     height: auto;
 }
-
 .copyright{    
     height: 20px;
     width: auto;
@@ -345,9 +339,32 @@ height: 150px;
 
 
 
+.reveal-left{
+    animation: 1s ease-out 0s 1 slideInLeft;
+}
+.reveal-right{
+    animation: 1s ease-out 0s 1 slideInRight;
+}
+.reveal-top{
+    animation: 0.5s ease-out 0s 1 slideInTop;
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
 
 
 @media (max-width:991px){
+    .navbar .linkedin{      
+        margin-left: 0;
+        margin-top: 5px;
+    }
     .what-i-do .logos{
         margin-top: -5rem;
     }
@@ -357,14 +374,16 @@ height: 150px;
     .what-i-do .grid{
         grid-template-columns: repeat(2,1fr);
     }
-    .footer-logos{
-        
-        margin-top: -5rem;
-          
+    .footer-logos{        
+        margin-top: -5rem;          
     }
 }
 
 @media (max-width: 767px) {
+    .navbar .linkedin{      
+        margin-left: 0;
+        margin-top: 5px;
+    }
     .landing .about .about-description{
         text-align: center;
     }
@@ -391,6 +410,30 @@ height: 150px;
 
 
 
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 
+@keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+    transform: translateX(0);
+    }
+}
+@keyframes slideInTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+    transform: translateY(0);
+    }
+}
 
 
